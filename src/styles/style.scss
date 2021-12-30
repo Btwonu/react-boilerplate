@@ -1,0 +1,13 @@
+@import '~@csstools/normalize.css';
+@import '~sanitize.css';
+@import 'variables';
+@import 'fonts';
+
+body {
+  color: $c-green;
+  font-family: $ff-sans;
+}
+
+body:fullscreen {
+  background-color: #fdfdfd;
+}
