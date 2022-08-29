@@ -1,13 +1,14 @@
-const SRC_DIR = __dirname + '/src';
-const DIST_DIR = __dirname + '/dist';
-
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+const SRC_DIR = path.join(__dirname, '/src');
+const DIST_DIR = path.join(__dirname, '/dist');
 
 module.exports = {
 	mode: 'development',
 	entry: {
-		index: SRC_DIR + '/index.jsx',
+		index: path.join(SRC_DIR, '/index.jsx'),
 	},
 	devtool: 'inline-source-map',
 	devServer: {

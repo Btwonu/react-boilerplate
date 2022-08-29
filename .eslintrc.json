@@ -21,6 +21,7 @@
 	"plugins": ["react"],
 	"rules": {
 		"no-unused-vars": "warn",
-		"no-console": "warn"
+		"no-console": "warn",
+		"import/no-extraneous-dependencies": "warn"
 	}
 }
