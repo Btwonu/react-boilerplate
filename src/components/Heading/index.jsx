@@ -1,8 +1,18 @@
 import React from 'react';
-import './styles.scss';
+import styled from 'styled-components';
+
+const StyledHeading = styled.div`
+	h1 {
+		color: blue;
+	}
+`;
 
 const Heading = () => {
-  return <h1>Heading 1</h1>;
+	return (
+		<StyledHeading>
+			<h1>Heading 1</h1>
+		</StyledHeading>
+	);
 };
 
 export default Heading;
