@@ -1,4 +1,3 @@
-const path = require('path');
 const SRC_DIR = __dirname + '/src';
 const DIST_DIR = __dirname + '/dist';
 
@@ -40,7 +39,6 @@ module.exports = {
             },
           },
           'postcss-loader',
-          'sass-loader',
         ],
       },
       {
@@ -74,6 +72,8 @@ module.exports = {
       title: 'Development',
       template: 'index.html',
     }),
-    new MiniCssExtractPlugin(),
   ],
+  resolve: {
+    extensions: ['.js', '.jsx']
+  }
 };
